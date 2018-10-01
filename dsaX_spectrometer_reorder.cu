@@ -621,7 +621,7 @@ std::cout << "Spec clipped: " << max_clipped << std::endl;
 	  }
 	 if(k==0) {
                 for(int i=0;i<2048;i++) {
-                        out_data[(gulp*NSAMPS_GULP)*2048+i] = repval + 0.3
+                        out_data[(gulp*NSAMPS_GULP)*2048+i] = repval + 0.3;
                 }
           } 
 	}
