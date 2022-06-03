@@ -2,7 +2,6 @@ BINDIR=/usr/local/dsaX/bin
 
 CC=gcc
 CFLAGS = -g -pthread -I/usr/local/psrdada/src
-#removed -O2
 CDEPS=dsaX_correlator_def.h dsaX_correlator_udpdb_thread.h
 SDEPS=dsaX_spectrometer_def.h dsaX_spectrometer_udpdb_thread.h
 COBJ = dsaX_correlator_udpdb_thread.o
@@ -43,4 +42,3 @@ clean:
 
 install:
 	cp dsaX_correlator_udpdb_thread dsaX_spectrometer_udpdb_thread dsaX_correlator_trigger dsaX_spectrometer dsaX_spectrometer_reorder dsaX_dbdisk $(BINDIR)
-
